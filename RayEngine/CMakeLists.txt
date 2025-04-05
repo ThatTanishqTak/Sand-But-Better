@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${OutputDir}")
 
 add_library(${PROJECT_NAME} STATIC 
-    "src/RayEngine.cpp" "src/RayEngine.h" "src/Window/WindowsWindow.h" "src/Window/WindowsWindow.cpp")
+    "src/Window/WindowsWindow.h" "src/Window/WindowsWindow.cpp" "src/Grid/Grid.h" "src/Grid/Grid.cpp")
 
 target_include_directories(${PROJECT_NAME} PUBLIC
     ${CMAKE_SOURCE_DIR}/RayEngine/src

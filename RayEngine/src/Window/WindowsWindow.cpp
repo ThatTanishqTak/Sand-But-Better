@@ -14,6 +14,7 @@ namespace Engine
 
 	void WindowsWindow::Init(int width, int height, const char* title)
 	{
+		SetConfigFlags(FLAG_WINDOW_RESIZABLE);
 		InitWindow(width, height, title);
 		SetTargetFPS(60);
 	}

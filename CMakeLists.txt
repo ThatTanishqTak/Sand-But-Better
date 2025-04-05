@@ -11,10 +11,6 @@ if(CMAKE_SYSTEM_NAME MATCHES "Windows")
     if(CMAKE_SIZEOF_VOID_P EQUAL 8)
         set(ARCH x64)
     endif()
-elseif(CMAKE_SYSTEM_NAME MATCHES "Darwin")
-    set(OS "Macos")
-elseif(CMAKE_SYSTEM_NAME MATCHES "Linux")
-    set(OS "Linux")
 endif()
 
 # Combine into a single variable
@@ -22,4 +18,4 @@ set(PLATFORM "${OS}-${ARCH}")
 set(OutputDir "${CMAKE_SOURCE_DIR}/bin/${CMAKE_BUILD_TYPE}-${PLATFORM}/${PROJECT_NAME}")
 
 add_subdirectory(RayEngine)
-add_subdirectory(App)
+add_subdirectory(Sand)

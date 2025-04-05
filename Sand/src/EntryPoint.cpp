@@ -2,9 +2,9 @@
 
 int main()
 {
-	Engine::Engine engine;
+	Game game;
 
-	engine.Run();
+	game.Run();
 
 	return 0;
 }
